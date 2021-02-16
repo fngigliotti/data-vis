@@ -1,0 +1,19 @@
+Variable label,Variable name,Measurement unit,Description
+Species,Species code,text,Species is a four-letter code indicating the species detected. They are as follows: COYE = Common Yellowthroat; MAWR = Marsh Wren; PBGR = Pied-billed Grebe; RWBL = Red-winged Blackbird; VIRA = Virginia Rail; and YHBL = Yellow-headed Blackbird. Scientific names are provided in the 'BreedingMarshBirds_SpeciesInfo' file.
+Site,Survey site,text,"Site is the name of the property on which the survey occurred. All of these properties are dominated by at least one shallow lake, which is a large (>20 hectares) and on average <1.5 m-deep wetland. These properties are public and managed by the Iowa Department of Natural Resources."
+Point,Point,text,"Point is the unique identifier of the point at a shallow lake (i.e., site) where the survey took place. There are between two and five points within a site."
+Visit,Visit number,text,Visit is a number indicating the visit number. This is either 'A' for the first visit or 'B' for the second visit in the year.
+Year,Year,text,"Year is the year the survey took place, i.e. Year1, or Year2."
+Distance,Distance (m),numeric,Disance is the raw distance in meters between the observer and the detected bird. This is used in calculating density estimates using distance sampling. NA indicates a survey at a point where this species was not detected. Surveys with no detections still need to be included in the distance sampling program.
+Status,Status,text,"State indicates whether the site was restored or not restored. The term ""restored"" refers to palustrine wetlands that were once severly degraded and subsequently restored by manipulation of the hydrology to improve water quality and vegetation. The term ""not restored"" refers to lacustrine wetlands that were not manipulated and characterized by little to no vegetation and the presence of turbid water."
+Age,Age (years),numeric,Age represents the years since restoration for that site.
+RestorationState,Restoration age,text,"RestorationState has three categories assigned to each site based on its status and years since restoration: not restored, 1-5 years since restoration, and 6-11 years since restoration. "
+Observer,Observer,numeric,"Observer represents which observer completed the survey. A value of 1 refers to the more experienced observer, while a value of 2 refers to two other observers who were less experienced."
+Temp,Temperature (C°),numeric,Temp is a temperature in C° that was collected prior to the start of each survey with a handheld weather meter.
+CloudCover,Cloud Cover,numeric,"Cloud cover ranges between 0 and 3 and represents the degree of cloud cover during the survey: 0 = no clouds, 1 = partly cloudy, 2 = overcast, and 3 = fog. This value was recorded prior to the start of each survey and was determined visually by the observer."
+WindSpeed,Wind Speed (kph),numeric,Wind speed is the wind speed in kph at the beginning of the survey recorded with a handheld weather meter.
+PointCattail,Point Cattail (%),numeric,PointCattail is the percent cattail (to the nearst 5%) within 50 m of the point.
+CallNum,Call Number,numeric,"CallNum represents the call type given by the bird. For PBGR these are the following: 1 = ohwhoop, 2 = hyena, 3 = both ohwhoop and hyena, and 4 = other. For VIRA these are the following: 1 = grunt and 2 = other. NA indicates that no call type was recorded for the individual detected or the individual was detected visually. This column is only relevant for VIRA and PBGR because we did not record call types for other species."
+JulianDay,Julian Day,numeric,JulianDay is the continuous count of days since the start of the year.
+TimeAfterSunrise,Time After Sunrise,numeric,TimeAfterSunrise is the minutes since sunrise. This value can be negative since some surveys took place before sunrise. 
+Area,Property Area (ha),numeric,This is the area (in hectares) of the site being surveyed.
